@@ -1,0 +1,12 @@
+BUILD_TYPE=${1:-Release}
+BUILD_DIR=build-$BUILD_TYPE
+
+mkdir -p "$BUILD_DIR"
+cd "$BUILD_DIR" || exit 1
+
+cmake .. \
+  -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+  -DSMALL_POOL_BLOCKS=${SMALL_POOL_BLOCKS} \
+  -DLARGE_POOL_BLOCKS=${LARGE_POOL_BLOCKS}
+  
+cmake --build .

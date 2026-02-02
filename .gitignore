@@ -1,41 +1,40 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# Компиляторные артефакты
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
+*.so
+*.dll
 *.exe
 *.out
-*.app
+*.elf
+*.pdb
+*.idb
+*.ilk
 
-# debug information files
-*.dwo
+# Папки сборки
+build-Release/
+build-Debug/
+
+# Файлы CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.d
+
+# IDE / редакторы
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
